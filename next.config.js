@@ -37,19 +37,10 @@ const nextConfig = {
   // Enable React strict mode for better error detection
   reactStrictMode: true,
   
-  // Enable SWC minification for better performance
-  swcMinify: true,
-  
   // Experimental features for mobile optimization
   experimental: {
-    // Server components for better performance
-    appDir: true,
-    
     // Optimize CSS for mobile
     optimizeCss: true,
-    
-    // Bundle analyzer for size optimization
-    bundlePagesRouterDependencies: true,
     
     // Modern JavaScript compilation
     esmExternals: true
@@ -204,18 +195,6 @@ const nextConfig = {
     return config
   },
   
-  // Performance budgets for mobile
-  performanceBudgets: [
-    {
-      path: '/',
-      maxSize: '500kb'
-    },
-    {
-      path: '/dashboard',
-      maxSize: '800kb'
-    }
-  ],
-  
   // Compression for mobile networks
   compress: true,
   
@@ -249,10 +228,9 @@ const nextConfig = {
   // Base path for subdirectory deployment
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
   
-  // DevIndicators configuration
+  // DevIndicators configuration (updated for Next.js 15)
   devIndicators: {
-    buildActivity: true,
-    buildActivityPosition: 'bottom-right'
+    position: 'bottom-right'
   }
 }
 

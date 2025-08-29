@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@/agent1-foundation/*": [
+        "src/agent1-foundation/*"
+      ],
+      "@/agent2-interface/*": [
+        "src/agent2-interface/*"
+      ],
+      "@/agent3-features/*": [
+        "src/agent3-features/*"
+      ],
+      "@/agent4-quality/*": [
+        "src/agent4-quality/*"
+      ],
+      "@/shared/*": [
+        "src/shared/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "target": "ES2017"
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
